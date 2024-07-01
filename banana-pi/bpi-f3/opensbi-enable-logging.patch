@@ -1,0 +1,9 @@
+diff --git a/platform/generic/configs/k1_defconfig b/platform/generic/configs/k1_defconfig
+index 08f1703..e4c0d0f 100644
+--- a/platform/generic/configs/k1_defconfig
++++ b/platform/generic/configs/k1_defconfig
+@@ -14,3 +14,4 @@ CONFIG_FDT_SERIAL=y
+ CONFIG_FDT_SERIAL_UART8250=y
+ CONFIG_ARM_PSCI_SUPPORT=y
+ CONFIG_ARM_NON_SCMI_SUPPORT=y
++CONFIG_ENABLE_LOGGING=y

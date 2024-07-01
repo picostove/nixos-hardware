@@ -1,0 +1,12 @@
+diff --git a/Makefile b/Makefile
+index 468f8a3..931122a 100644
+--- a/Makefile
++++ b/Makefile
+@@ -652,6 +652,7 @@ install_libplatsbi: $(platform_build_dir)/lib/libplatsbi.a $(build_dir)/lib/libs
+ install_firmwares: $(platform_build_dir)/lib/libplatsbi.a $(build_dir)/lib/libsbi.a $(firmware-bins-path-y)
+ 	$(call inst_file_list,$(install_root_dir),$(build_dir),$(install_firmware_path)/$(platform_subdir)/firmware,$(firmware-elfs-path-y))
+ 	$(call inst_file_list,$(install_root_dir),$(build_dir),$(install_firmware_path)/$(platform_subdir)/firmware,$(firmware-bins-path-y))
++	$(call inst_file_list,$(install_root_dir),$(build_dir),$(install_firmware_path)/$(platform_subdir)/firmware,$(firmware-itb-path-y))
+ 
+ .PHONY: install_docs
+ install_docs: $(build_dir)/docs/latex/refman.pdf
